@@ -1,0 +1,18 @@
+.author-name{
+  padding-top: 2in;
+
+}
+.stretched-text {
+  letter-spacing: 10px;
+  display: inline-block;
+  font-size: 64px;
+  transform: scaleY(0.75);
+  transform-origin: 0 0;
+
+}
+span {
+  font-size: 500em;
+  vertical-align: top;
+}
+
+
