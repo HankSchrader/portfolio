@@ -1,0 +1,16 @@
+.padding-size {
+  padding-right: 3em;
+  align-content: center;
+}
+.mat-menu-item {
+
+}
+
+button.mat-menu-item{
+  background-color: white;
+}
+
+button.mat-menu-item:hover {
+
+  color: black !important;
+}

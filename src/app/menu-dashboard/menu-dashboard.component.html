@@ -1,0 +1,20 @@
+<div class="padding-size">
+  <button mat-button [matMenuTriggerFor]="bookMenu">Author</button>
+  <mat-menu #bookMenu="matMenu" yPosition="below">
+    <div *ngFor="let book of books">
+      <button mat-menu-item>{{book.name}}</button>
+    </div>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="belowMenu">Programmer</button>
+  <mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item>Angular 2+</button>
+    <button mat-menu-item>Java</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="beforeMenu">Other Stuff</button>
+  <mat-menu #beforeMenu="matMenu" yPosition="below">
+    <button mat-menu-item>Blog</button>
+
+  </mat-menu>
+</div>
