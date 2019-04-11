@@ -31,6 +31,7 @@ import { DakotaDeadlockIslandComponent } from './dakota-deadlock-island/dakota-d
     DakotaDeadlockIslandComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,

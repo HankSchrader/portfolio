@@ -3,4 +3,5 @@ export class Book {
   id: number;
   name: string;
   yearPublished: number;
+  url: string;
 }
