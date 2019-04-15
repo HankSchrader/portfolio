@@ -14,3 +14,6 @@ span {
   font-size: 500em;
   vertical-align: top;
 }
+.front-page {
+  height: 100vh;
+}
