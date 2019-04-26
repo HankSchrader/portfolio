@@ -7,7 +7,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   selector: 'app-menu-dashboard',
   templateUrl: './menu-dashboard.component.html',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: ['./menu-dashboard.component.css'],
+  styleUrls: ['./menu-dashboard.component.scss'],
   animations: [
 
     trigger('fadeInOutFirst', [

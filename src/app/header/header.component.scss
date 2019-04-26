@@ -1,0 +1,8 @@
+@mixin my-padding-mixin($some-number) {
+  padding: $some-number;
+}
+
+.mat-display-1 {
+
+  @include my-padding-mixin(1rem)
+}

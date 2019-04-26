@@ -1,8 +1,10 @@
 .author-name{
   padding-top: 2in;
+  align-content: center;
 
 }
 .stretched-text {
+  align-content: center;
   letter-spacing: 10px;
   display: inline-block;
   font-size: 64px;
@@ -10,10 +12,7 @@
   transform-origin: 0 0;
 
 }
-span {
-  font-size: 500em;
-  vertical-align: top;
-}
-.front-page {
+
+body {
   height: 100vh;
 }

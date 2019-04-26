@@ -3,9 +3,7 @@
   <mat-menu #bookMenu="matMenu" yPosition="below">
     <div *ngFor="let book of books" >
       <a routerLink="/book/{{book.url}}">
-        <div [@fadeInOut]>
       <button mat-menu-item >{{book.name}}</button>
-        </div>
       </a>
     </div>
   </mat-menu>

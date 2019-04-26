@@ -4,7 +4,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 @Component({
   selector: 'app-bayou-bad-news',
   templateUrl: './bayou-bad-news.component.html',
-  styleUrls: ['./bayou-bad-news.component.css'],
+  styleUrls: ['./bayou-bad-news.component.scss'],
   animations: [
 
     trigger('fadeInOut', [

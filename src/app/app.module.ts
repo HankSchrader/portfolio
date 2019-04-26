@@ -15,10 +15,11 @@ import {
 } from '@angular/material';
 import { MenuDashboardComponent } from './menu-dashboard/menu-dashboard.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BayouBadNewsComponent } from './bayou-bad-news/bayou-bad-news.component';
 import { DakotaDeadlockIslandComponent } from './dakota-deadlock-island/dakota-deadlock-island.component';
+import { SignupSheetComponent } from './signup-sheet/signup-sheet.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,9 +27,9 @@ import { DakotaDeadlockIslandComponent } from './dakota-deadlock-island/dakota-d
     AboutMePanelComponent,
     MenuDashboardComponent,
     HeaderComponent,
-    FooterComponent,
     BayouBadNewsComponent,
-    DakotaDeadlockIslandComponent
+    DakotaDeadlockIslandComponent,
+    SignupSheetComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -41,7 +42,8 @@ import { DakotaDeadlockIslandComponent } from './dakota-deadlock-island/dakota-d
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
 
   providers: [],

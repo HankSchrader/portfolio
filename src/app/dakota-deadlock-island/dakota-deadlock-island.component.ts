@@ -5,7 +5,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 @Component({
   selector: 'app-dakota-deadlock-island',
   templateUrl: './dakota-deadlock-island.component.html',
-  styleUrls: ['./dakota-deadlock-island.component.css'],
+  styleUrls: ['./dakota-deadlock-island.component.scss'],
   animations: [
 
     trigger('fadeInOut', [

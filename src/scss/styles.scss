@@ -1,0 +1,23 @@
+@import "../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+$font-color:  -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;;
+
+body {
+  background: $font-color
+}
+
+.bookPage {
+  position: center;
+
+  animation: 1s 1000ms ease-in-out;
+}
+@keyframes ease-in {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    ransform: translateY(100px);
+    opacity: 1;
+  }
+}
