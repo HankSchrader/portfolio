@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {ErrorHandler, NgModule} from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AboutMePanelComponent } from './about-me-panel/about-me-panel.component';
@@ -16,10 +16,12 @@ import {
 import { MenuDashboardComponent } from './menu-dashboard/menu-dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { BayouBadNewsComponent } from './bayou-bad-news/bayou-bad-news.component';
-import { DakotaDeadlockIslandComponent } from './dakota-deadlock-island/dakota-deadlock-island.component';
+import { BayouBadNewsComponent } from './my-books/bayou-bad-news/bayou-bad-news.component';
+import { DakotaDeadlockIslandComponent } from './my-books/dakota-deadlock-island/dakota-deadlock-island.component';
 import { SignupSheetComponent } from './signup-sheet/signup-sheet.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { EyesOfTheDragonComponent } from './five-favorite-books/eyes-of-the-dragon/eyes-of-the-dragon.component';
+import {CustomErrorService} from './custom-error.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     HeaderComponent,
     BayouBadNewsComponent,
     DakotaDeadlockIslandComponent,
-    SignupSheetComponent
+    SignupSheetComponent,
+    EyesOfTheDragonComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -46,7 +49,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule
   ],
 
-  providers: [],
+  providers: [CustomErrorService,
+    {provide: ErrorHandler, useClass: CustomErrorService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
