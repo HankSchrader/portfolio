@@ -1,0 +1,67 @@
+<div style="display:flex; flex-direction: column">
+  <div class="mat-card" style="width: 50%; margin: 10px auto;">
+
+    <h2 class="submission-header">
+      <div class="submission-title">
+        Sign up for my newsletter!
+      </div>
+    </h2>
+
+    <div class="mat-card-content">
+      <form
+            (click)="save()" [formGroup]="signUpForm">
+          <mat-form-field floatLabel="auto">
+            <mat-label
+              for="firstNameId">First Name
+            </mat-label>
+            <input matInput
+                   id="firstNameId"
+                   placeholder="Name..."
+                   formControlName="firstName"
+                   />
+            <mat-error *ngIf="signUpForm.invalid">{{firstNameMsg}}</mat-error>
+          </mat-form-field>
+          <mat-form-field floatLabel="auto">
+            <mat-label
+              for="lastNameId">Last Name
+            </mat-label>
+            <input matInput
+                   id="lastNameId"
+                   placeholder="Name..."
+                   formControlName="lastName"/>
+            <mat-error *ngIf="signUpForm.invalid">{{lastNameMsg}}</mat-error>
+          </mat-form-field>
+        <div >
+          <mat-form-field floatLabel="auto">
+            <mat-label
+              for="emailId">Email
+            </mat-label>
+            <input matInput
+                   id="emailId"
+                   placeholder="Email..."
+                   formControlName="email"/>
+            <mat-error *ngIf="signUpForm.invalid">{{emailMsg}}</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group row mb-2">
+          <div class="offset-md-4 col-md-4">
+            <mat-button-toggle
+                    type="submit"
+                    id="submissionButton"
+                    style="width:80px"
+                    [title]="signUpForm.valid ? 'Save your entered data' : 'Disabled until the form data is valid'"
+                    [disabled]="signUpForm.invalid">
+              Save
+            </mat-button-toggle>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+<br>Dirty: email.dirty
+<br>Touched: {{ signUpForm.touched }}
+<br>Valid: {{ signUpForm.valid }}
+<br>Value: {{ signUpForm.value | json }}
