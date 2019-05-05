@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { AboutMePanelComponent } from './about-me-panel/about-me-panel.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
-  MatButtonModule, MatButtonToggleModule,
+  MatButtonModule, MatButtonToggleModule, MatCardModule,
   MatCheckboxModule,
   MatIconModule, MatInputModule,
   MatListModule,
@@ -48,7 +48,8 @@ import {CustomErrorService} from './custom-error.service';
     AppRoutingModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatCardModule
   ],
 
   providers: [CustomErrorService,

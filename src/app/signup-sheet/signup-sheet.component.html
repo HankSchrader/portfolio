@@ -47,11 +47,10 @@
         <div class="form-group row mb-2">
           <div class="offset-md-4 col-md-4">
             <mat-button-toggle
-                    type="submit"
-                    id="submissionButton"
-                    style="width:80px"
-                    [title]="signUpForm.valid ? 'Save your entered data' : 'Disabled until the form data is valid'"
-                    [disabled]="signUpForm.invalid">
+              id="submissionButton"
+              style="width:50%"
+              [title]="signUpForm.valid ? 'Save your entered data' : 'Disabled until the form data is valid'"
+              [disabled]="signUpForm.invalid">
               Save
             </mat-button-toggle>
           </div>
