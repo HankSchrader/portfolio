@@ -1,9 +1,10 @@
 @import "../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "~@angular/material/theming";
 $font-color:  -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;;
 
 body {
-  background: $font-color
+  background: mat-color($mat-light-theme-background);
 }
 
 .bookPage {
@@ -17,7 +18,12 @@ body {
     opacity: 0;
   }
   to {
-    ransform: translateY(100px);
+    transform: translateY(100px);
     opacity: 1;
   }
 }
+
+.book-card {
+  max-width: 300px;
+}
+

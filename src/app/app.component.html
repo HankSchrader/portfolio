@@ -1,14 +1,33 @@
-
 <div class="front-page">
   <div style="padding: 1in">
     <app-header [title]="title"></app-header>
     <div style="align: center">
       <app-signup-sheet></app-signup-sheet>
+
+      <div class="container"
+           fxLayout
+           fxLayoutAlign="center"
+           fxLayout.xs="column"
+           fxLayoutGap="10px"
+           fxLayoutGap.xs="0">
+        <app-top-five-favorite-books fxFlex="33%" [book]=topFive[0]></app-top-five-favorite-books>
+        <app-top-five-favorite-books fxFlex="33%" [book]="topFive[1]"></app-top-five-favorite-books>
+        <app-top-five-favorite-books fxFlex="33%" [book]=topFive[2]></app-top-five-favorite-books>
+      </div>
+      <div style="height: 10rem;"></div>
+
+      <div class="container"
+           fxLayout
+           fxLayout.xs="column"
+           fxLayoutAlign="center"
+           fxLayoutGap.xs="0">
+
+        <app-top-five-favorite-books fxFlex="50%" [book]=topFive[3]></app-top-five-favorite-books>
+        <app-top-five-favorite-books fxFlex="50%" [book]=topFive[4]></app-top-five-favorite-books>
+      </div>
+
+      </div>
     </div>
-    <app-eyes-of-the-dragon [book]="topFive[0]"></app-eyes-of-the-dragon>
-    <app-eyes-of-the-dragon [book]="topFive[1]"></app-eyes-of-the-dragon>
 
     <router-outlet></router-outlet>
   </div>
-</div>
-

@@ -6,7 +6,7 @@ import { AboutMePanelComponent } from './about-me-panel/about-me-panel.component
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButtonModule, MatButtonToggleModule, MatCardModule,
-  MatCheckboxModule,
+  MatCheckboxModule, MatGridListModule,
   MatIconModule, MatInputModule,
   MatListModule,
   MatMenuModule,
@@ -20,8 +20,9 @@ import { BayouBadNewsComponent } from './my-books/bayou-bad-news/bayou-bad-news.
 import { DakotaDeadlockIslandComponent } from './my-books/dakota-deadlock-island/dakota-deadlock-island.component';
 import { SignupSheetComponent } from './signup-sheet/signup-sheet.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { EyesOfTheDragonComponent } from './five-favorite-books/eyes-of-the-dragon/eyes-of-the-dragon.component';
+import { TopFiveFavoriteBooksComponent } from './five-favorite-books/top-five-favorite-books/top-five-favorite-books.component';
 import {CustomErrorService} from './custom-error.service';
+import {FlexModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import {CustomErrorService} from './custom-error.service';
     BayouBadNewsComponent,
     DakotaDeadlockIslandComponent,
     SignupSheetComponent,
-    EyesOfTheDragonComponent
+    TopFiveFavoriteBooksComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -49,7 +50,9 @@ import {CustomErrorService} from './custom-error.service';
     ReactiveFormsModule,
     MatInputModule,
     MatButtonToggleModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    FlexModule
   ],
 
   providers: [CustomErrorService,

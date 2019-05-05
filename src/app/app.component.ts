@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, Input, ViewEncapsulation} from '@angular/core';
 import {TOP_FIVE_BOOKS} from './top-five-books';
 
 @Component({
