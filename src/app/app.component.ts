@@ -8,6 +8,5 @@ import {TOP_FIVE_BOOKS} from './top-five-books';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  topFive = TOP_FIVE_BOOKS;
   title = 'ERIK MIKAC';
 }

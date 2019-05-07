@@ -9,6 +9,6 @@ export const TOP_FIVE_BOOKS: Book[] = [
     alt: 'Dune by Frank Herbert'},
   {id: 4, name: 'The Hitchhikers Guide to the Galaxy', description: 'One of the funniest books I have ever read.',
     author: 'Douglas Adams', image: imageRoot + 'hitch-hikers-guide.png', alt: 'The Hitchhikers Guide to the Galaxy by Douglas Adams'},
-  {id: 5, name: 'Shogun', description: 'The Epic Novel of Japan',
-    author: 'James Clavell', image: imageRoot + 'shogun.png', alt: 'Shogun by James Clavell'}
+  {id: 5, name: 'The Lion, the Witch and the Wardrobe', description: 'The first book if an amazing series.',
+    author: 'C.S. Lewis', image: imageRoot + 'Lion-witch-wardrobe.png', alt: 'The Lion, the Witch and the Wardrobe by C.S. Lewis'}
 ];

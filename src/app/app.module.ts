@@ -23,6 +23,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { TopFiveFavoriteBooksComponent } from './five-favorite-books/top-five-favorite-books/top-five-favorite-books.component';
 import {CustomErrorService} from './custom-error.service';
 import {FlexModule} from '@angular/flex-layout';
+import { FavoriteBookListComponent } from './five-favorite-books/favorite-book-list/favorite-book-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {FlexModule} from '@angular/flex-layout';
     BayouBadNewsComponent,
     DakotaDeadlockIslandComponent,
     SignupSheetComponent,
-    TopFiveFavoriteBooksComponent
+    TopFiveFavoriteBooksComponent,
+    FavoriteBookListComponent
   ],
   imports: [
     BrowserAnimationsModule,
