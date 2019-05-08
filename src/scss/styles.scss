@@ -1,10 +1,23 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+// import our custom theme
+@import 'theme.scss';
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import "~@angular/material/theming";
+@include mat-core();
 $font-color:  -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;;
 
-body {
-  background: mat-color($mat-light-theme-background);
+.my-theme {
+
+  // use our theme with angular-material-theme mixin
+  @include angular-material-theme($my-app-theme);
+  background-color: mat-color($my-app-primary);
+}
+
+.submission-header {
+  position: relative;
+  bottom: 1em;
+  text-align: center;
 }
 
 .bookPage {

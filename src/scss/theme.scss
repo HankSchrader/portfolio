@@ -1,10 +1,13 @@
 // theme.scss
 @import '~@angular/material/theming';
 @include mat-core()
-$my-theme-primary: mat-palette($mat-green);
-$my-theme-secondary: mat-palette($mat-gray);
-$my-them-warn: mat-palette($mat-deep-orange);
+$my-app-primary: mat-palette($mat-blue-grey);
+$my-app-accent:  mat-palette($mat-pink, 500, 900, A100);
+$my-app-warn:    mat-palette($mat-deep-orange);
 
-$my-theme: mat-light-theme($my-theme-primary,$my-theme-secondary,$my-them-warn);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
-@include angular-material-theme($my-theme);
+@include angular-material-theme($my-app-theme);
+.custom-mat-card {
+  background-color: mat-color($my-app-accent);
+}
