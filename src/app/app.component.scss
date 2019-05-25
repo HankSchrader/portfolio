@@ -1,18 +1,17 @@
+@import "../scss/theme.scss";
 .author-name{
   padding-top: 2in;
   align-content: center;
+  color: mat-color($my-app-primary, 600);
+  font-family: Rockwell, fantasy;
 
 }
 .stretched-text {
   align-content: center;
-  letter-spacing: 10px;
+  letter-spacing: 15px;
   display: inline-block;
-  font-size: 64px;
-  transform: scaleY(0.75);
+  font-size: 72px;
+  transform: scaleY(1.0);
   transform-origin: 0 0;
 
-}
-
-body {
-  height: 100vh;
 }

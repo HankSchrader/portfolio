@@ -10,10 +10,10 @@ import {
   MatIconModule, MatInputModule,
   MatListModule,
   MatMenuModule,
-  MatSidenavModule,
+  MatSidenavModule, MatStepperModule,
   MatToolbarModule
 } from '@angular/material';
-import { MenuDashboardComponent } from './menu-dashboard/menu-dashboard.component';
+import { MenuDashboardComponent } from './header/menu-dashboard/menu-dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BayouBadNewsComponent } from './my-books/bayou-bad-news/bayou-bad-news.component';
@@ -24,6 +24,7 @@ import { TopFiveFavoriteBooksComponent } from './five-favorite-books/top-five-fa
 import {CustomErrorService} from './custom-error.service';
 import {FlexModule} from '@angular/flex-layout';
 import { FavoriteBookListComponent } from './five-favorite-books/favorite-book-list/favorite-book-list.component';
+import { StepperSignupComponent } from './signup-sheet/stepper-signup/stepper-signup.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FavoriteBookListComponent } from './five-favorite-books/favorite-book-l
     DakotaDeadlockIslandComponent,
     SignupSheetComponent,
     TopFiveFavoriteBooksComponent,
-    FavoriteBookListComponent
+    FavoriteBookListComponent,
+    StepperSignupComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -54,7 +56,8 @@ import { FavoriteBookListComponent } from './five-favorite-books/favorite-book-l
     MatButtonToggleModule,
     MatCardModule,
     MatGridListModule,
-    FlexModule
+    FlexModule,
+    MatStepperModule
   ],
 
   providers: [CustomErrorService,

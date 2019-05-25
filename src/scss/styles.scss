@@ -6,12 +6,16 @@
 @import "~@angular/material/theming";
 @include mat-core();
 $font-color:  -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;;
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
 
 .my-theme {
 
   // use our theme with angular-material-theme mixin
   @include angular-material-theme($my-app-theme);
-  background-color: mat-color($my-app-primary);
+  background-color: $font-color
 }
 
 .submission-header {

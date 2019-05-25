@@ -1,9 +1,13 @@
 .padding-size {
-
-  align-content: center;
+  padding: 2rem;
+  text-align: center !important;
+  align-content: center !important;
 }
 .mat-menu-item {
   padding: 1em;
+}
+.mat-button {
+  font-size: 22px;
 }
 
 button.mat-menu-item{

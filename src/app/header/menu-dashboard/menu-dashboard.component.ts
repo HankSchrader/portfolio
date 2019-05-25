@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {Book} from '../Book';
-import {BOOKS} from '../books-I-wrote';
+import {Book} from '../../Book';
+import {BOOKS} from '../../books-I-wrote';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({

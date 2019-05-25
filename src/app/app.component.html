@@ -1,8 +1,10 @@
+<app-header [title]="title"></app-header>
+
 <div class="front-page">
   <div style="padding: 1in">
-    <app-header [title]="title"></app-header>
-    <div style="align: center">
-      <app-signup-sheet></app-signup-sheet>
+    <div style="align-content: center">
+      <app-stepper-signup></app-stepper-signup>
       <app-favorite-book-list></app-favorite-book-list>
       <router-outlet></router-outlet>
+    </div>
   </div>

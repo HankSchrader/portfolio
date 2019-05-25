@@ -1,0 +1,10 @@
+@import '~@angular/material/theming';
+@import '../../../scss/theme.scss';
+
+.mat-card {
+  background-color: mat-color($my-app-warn, 200);
+}
+
+.mat-card-title {
+  font-family: Roboto, serif;
+}
