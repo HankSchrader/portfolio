@@ -9,8 +9,13 @@ import {BOOKS} from './books-I-wrote';
 const routes: Routes = [
   { path: 'book/bayou-of-bad-news', component: BayouBadNewsComponent },
   { path: 'header', component: HeaderComponent },
-  { path: 'book/dakota-on-deadlock-island', component: DakotaDeadlockIslandComponent }
+  { path: 'book/dakota-on-deadlock-island', component: DakotaDeadlockIslandComponent,
+  data: {
+    tag: 'dakota'
+  }
+  }
 ];
+// @ts-ignore
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]

@@ -5,17 +5,17 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import "~@angular/material/theming";
 @include mat-core();
-$font-color:  -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;;
+$font-color:  -webkit-gradient(linear, left top, left bottom, from(mat-color($my-app-accent,100)), to(#cbccc8)) fixed;;
 body {
   margin: 0;
   font-family: sans-serif;
+  background: $font-color;
 }
 
 .my-theme {
 
   // use our theme with angular-material-theme mixin
-  @include angular-material-theme($my-app-theme);
-  background-color: $font-color
+  //@include angular-material-theme($my-app-theme);
 }
 
 .submission-header {

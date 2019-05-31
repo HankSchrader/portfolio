@@ -4,4 +4,5 @@ export class MyBook {
   name: string;
   yearPublished: number;
   url: string;
+  tag: string;
 }

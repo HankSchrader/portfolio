@@ -2,8 +2,8 @@
   <button [@fadeInOutFirst] mat-button [matMenuTriggerFor]="bookMenu">Author</button>
   <mat-menu #bookMenu="matMenu" yPosition="below">
     <div *ngFor="let book of books" >
-      <a routerLink="/book/{{book.url}}">
-      <button mat-menu-item >{{book.name}}</button>
+      <a routerLink="/book/{{book.url}}" [fragment]="book.tag">
+      <button  class="ang" mat-menu-item >{{book.name}}</button>
       </a>
     </div>
   </mat-menu>
@@ -21,3 +21,4 @@
 
   </mat-menu>
 </div>
+<

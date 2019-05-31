@@ -1,7 +1,11 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnChanges, OnInit, Output, ViewChild, ViewEncapsulation} from '@angular/core';
 import {Book} from '../../Book';
 import {BOOKS} from '../../books-I-wrote';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import {DakotaDeadlockIslandComponent} from '../../my-books/dakota-deadlock-island/dakota-deadlock-island.component';
+import {AnchorService} from '../../anchor.service';
+import {of, Subject} from 'rxjs';
+import {Route, Router, RouterModule} from '@angular/router';
 
 @Component({
   selector: 'app-menu-dashboard',
@@ -30,11 +34,21 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     ])
   ]
 })
-export class MenuDashboardComponent implements OnInit {
+export class MenuDashboardComponent implements OnInit, OnChanges {
   books = BOOKS;
-  constructor() { }
+  private anchor: AnchorService;
+  private router: Router;
+  isClicked = false;
+  constructor(anchor: AnchorService, router: RouterModule) {
+    this.anchor = anchor;
+
+  }
 
   ngOnInit() {
   }
+  ngOnChanges() {
+  }
+
+
 
 }

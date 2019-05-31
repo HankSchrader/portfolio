@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
@@ -33,4 +33,6 @@ export class HeaderComponent implements OnInit {
   public isViewable: boolean;
   constructor() { }
   ngOnInit() {this.isViewable = true; }
+
+
 }

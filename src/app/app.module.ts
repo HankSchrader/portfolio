@@ -20,11 +20,11 @@ import { BayouBadNewsComponent } from './my-books/bayou-bad-news/bayou-bad-news.
 import { DakotaDeadlockIslandComponent } from './my-books/dakota-deadlock-island/dakota-deadlock-island.component';
 import { SignupSheetComponent } from './signup-sheet/signup-sheet.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { TopFiveFavoriteBooksComponent } from './five-favorite-books/top-five-favorite-books/top-five-favorite-books.component';
+import { FavoriteBookTemplateComponent } from './five-favorite-books/favorite-book-template/favorite-book-template.component';
 import {CustomErrorService} from './custom-error.service';
 import {FlexModule} from '@angular/flex-layout';
 import { FavoriteBookListComponent } from './five-favorite-books/favorite-book-list/favorite-book-list.component';
-import { StepperSignupComponent } from './signup-sheet/stepper-signup/stepper-signup.component';
+import { StepperSignupComponent } from './header/stepper-signup/stepper-signup.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { StepperSignupComponent } from './signup-sheet/stepper-signup/stepper-si
     BayouBadNewsComponent,
     DakotaDeadlockIslandComponent,
     SignupSheetComponent,
-    TopFiveFavoriteBooksComponent,
+    FavoriteBookTemplateComponent,
     FavoriteBookListComponent,
     StepperSignupComponent,
   ],
