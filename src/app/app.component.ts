@@ -9,8 +9,4 @@ import {TOP_FIVE_BOOKS} from './top-five-books';
 })
 export class AppComponent {
   title = 'ERIK MIKAC';
-  public link: boolean;
-  getEvent(event: boolean) {
-    this.link = event;
-  }
 }
